@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.page{
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.visible{
+    left: 0;
+    transition: 0.5s all ease-in-out;
+    
+}
+
+.box{
+    width:80%;
+    height:80%;
+    display:grid;
+    place-items:center;
+    border:1px solid white;
+}
+
+#imagebox{
+    background-image: url(./assets/jeppe.jpg);
+    background-size: cover;
+    background-position: top;
+    color: lime;
+}
+
+#page1{
+    background-color: lightskyblue;
+}
+#page2{
+    background-color: lightgreen;
+}
+
+h1{
+    font-family:Raleway;
+    color:limegreen; 
+    
+}
