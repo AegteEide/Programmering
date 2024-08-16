@@ -4,8 +4,7 @@ let pages //array med alle elementer med class = page
 function setup(){
     console.log("P5.js er loaded")
     pages = selectAll('.page')
-    //Nu kan man se at pages er blevet til en liste med alle class =  page ting
-    //console.log(pages.length)
+    
 }
 
 function shiftPage(num){
