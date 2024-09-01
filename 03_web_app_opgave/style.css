@@ -42,7 +42,7 @@ header#leftmenu {
 }
 
 .menuitem:hover {
-    border-bottom:4px solid gray;
+    border-bottom:4px solid rgb(32, 32, 32);
     font-size:2.4rem;
 }
 
