@@ -80,6 +80,7 @@ header.hidden:hover .menuitem {
 
 #page1 {
     background-color: rgb(150, 164, 173);
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 3fr;
 }
 
@@ -89,21 +90,30 @@ header.hidden:hover .menuitem {
     height:100%;
     display:grid;
     place-items:center;
-    grid-template-columns:  1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+
 }
 
-.left #item1 {
+.left #leftitem1 {
     background-image:url(./assets/ezracollective_logo.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
-#page1 .right #item1 {
-    background-image: url(./assets/Ezra-Collective.jpg);
-    background-size: 80%;
+#page1 .right {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(150, 164, 173);
 }
+
+.right #item1r {
+    background-image: url(assets/Ezra-Collective.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
 
 #page2 {
     background-color: rgb(111, 119, 111);
@@ -125,13 +135,17 @@ header.hidden:hover .menuitem {
     height:100%;
     display:grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'femi joe james'
+        'femitext joetext jamestext'
+        'tj ife dylan'
+        'tjtext ifetext dylantext';
 }
 
-
-
 .right #item1 {
+    grid-area: femi;
     background-position: center;
     background-image: url(./assets/Femi-1.jpeg);
     background-size: 80%;
@@ -139,6 +153,7 @@ header.hidden:hover .menuitem {
 }
 
 .right #item2 {
+    grid-area: joe;
     background-position: center;
     background-image: url(./assets/eec0c4ae-610c-46d7-9d74-1d0a62c64c25_1584835200.jpeg);
     background-size: 80%;
@@ -146,13 +161,35 @@ header.hidden:hover .menuitem {
 }
 
 .right #item3 {
+    grid-area: james;
     background-position: center;
     background-image: url(./assets/D46LQd6X4AAb_ya.jpg);
     background-size: 80%;
     background-repeat: no-repeat;
 }
 
+.right #item4 {
+    grid-area: femitext;
+
+}
+.right #item5 {
+    grid-area: joetext;
+    display:grid;
+    place-items:center;
+    padding:2rem;
+    font-size:1.5rem;
+}
+
+.right #item6 {
+    grid-area: jamestext;
+    display:grid;
+    place-items:center;
+    padding:2rem;
+    font-size:1.5rem;
+}
+
 .right #item7 {
+    grid-area: tj;
     background-position: center;
     background-image: url(./assets/D-aBKjkXsAAnTWx.jpg);
     background-size: 80%;
@@ -160,6 +197,7 @@ header.hidden:hover .menuitem {
 }
 
 .right #item8 {
+    grid-area: ife;
     background-position: center;
     background-image: url(./assets/stbjdhJV_400x400.jpg);
     background-size: 80%;
@@ -167,24 +205,109 @@ header.hidden:hover .menuitem {
 }
 
 .right #item9 {
+    grid-area: dylan;
     background-position: center;
     background-image: url(./assets/dylanjones.jpg);
     background-size: 80%;
     background-repeat: no-repeat;
 }
 
+.right #item10 {
+    grid-area: tjtext;
+    display:grid;
+    place-items:center;
+    padding:2rem;
+    font-size:1.5rem;
+}
+
+.right #item11 {
+    grid-area: ifetext;
+    display:grid;
+    place-items:center;
+    padding:2rem;
+    font-size:1.5rem;
+}
+
+.right #item12 {
+    grid-area: dylantext;
+    display:grid;
+    place-items:center;
+    padding:2rem;
+    font-size:1.5rem;
+}
 
 
 
 #page3 {
     background-color: rgb(168, 135, 183);
+    grid-template-columns: 3fr 7fr;
+}
+
+#page3 .left {
+    width:100%;
+    height:100%;
+    display:grid;
+    place-items:center;
+    padding:2rem;
+    background-color:whitesmoke;
+    font-size:1.5rem;
+}
+
+#page3 .right {
+    width:100%;
+    height:100%;
+    display:grid;
+    place-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.right #page3item1{
+    background-position: center;
+    background-image: url(./assets/a4148933538_10.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.right #page3item2{
+    background-position: center;
+    background-image: url(./assets/a1214454722_65.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.right #page3item3{
+    background-position: center;
+    background-image: url(./assets/a4214665865_65.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.right #page3item4{
+    background-position: center;
+    background-image: url(./assets/ab67616d0000b273b251d35a62fbd725c70aadb0.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.right #page3item5{
+    background-position: center;
+    background-image: url(./assets/a0534195719_10.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.right #page3item6{
+    background-position: center;
+    background-image: url(./assets/a4249844765_10.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
 }
 
 #page4 {
-    background-color: rgb(209, 172, 158);
+    background-color: rgb(13, 99, 13);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(assets/EZ_tour.jpg);
 }
 
 h1 {
     font-family: Raleway;
-    color:hotpink;
+    color:rgb(0, 0, 0);
 }
