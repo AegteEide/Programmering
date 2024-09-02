@@ -79,7 +79,7 @@ header.hidden:hover .menuitem {
 
 
 #page1 {
-    background-color: lightskyblue;
+    background-color: rgb(150, 164, 173);
     grid-template-columns: 1fr 3fr;
 }
 
@@ -93,15 +93,20 @@ header.hidden:hover .menuitem {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.left #item1{
+.left #item1 {
     background-image:url(./assets/ezracollective_logo.jpg);
-    background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#page1 .right #item1 {
+    background-image: url(./assets/Ezra-Collective.jpg);
+    background-size: 80%;
 }
 
 #page2 {
-    background-color: lightgreen;
+    background-color: rgb(111, 119, 111);
     grid-template-columns: 3fr 7fr;
 }
 
@@ -172,11 +177,11 @@ header.hidden:hover .menuitem {
 
 
 #page3 {
-    background-color: lightcyan;
+    background-color: rgb(168, 135, 183);
 }
 
 #page4 {
-    background-color: lightsalmon;
+    background-color: rgb(209, 172, 158);
 }
 
 h1 {
