@@ -1,7 +1,7 @@
 
-
 function setup(){
     //Variablen c, er en ny instans af klassen Clock, som får div'en #clock med i sin constructor
+
     let c = new Clock( select('#clock') , 'black')
     c.start()
 
@@ -9,4 +9,6 @@ function setup(){
     let otherClock = new Clock( otherClockDiv )
     otherClock.start()
     otherClockDiv.position( 100, 100 )
+    otherClock.setAlarm('15', '39', '00')
 }
+

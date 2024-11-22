@@ -1,4 +1,10 @@
+let alarmSound
+
 console.log('Clock is here')
+
+function preload() {
+    alarmSound = loadSound('./assets/alarmSound.mp3')
+}
 
 //Når en klasses objekter kan opføre sig forskelligt afhængig af argumenter i contructoren 
 //Kaldes det POLYMORFI
@@ -85,5 +91,6 @@ class Clock {
     showAlarm(){
         this.div.style('background','red')
         this.alarmRinging = true
+        alarmSound.play()
     }
 }
